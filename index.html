@@ -7,7 +7,6 @@
   <title>PopcornTime</title>
   <link rel="icon" type="image/x-icon" href="./assets/logo.png">
   <link rel="stylesheet" href="./index.css">
-  <script src="index.js"></script>  
   <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -33,13 +32,36 @@
       <div class="header__content">
         <h1 class="title">Browse our movies</h1>
         <div class="input__wrapper">
-          <form class="search__form" action="" onsubmit="">
-            <input class="input" name="movie_name" type="search" placeholder="Search by Movie name">
-            <button type="submit"><i class="fa fa-search"></i></button>
-          </form>
+            <input type="text" placeholder="Search by Movie name" onchange="onSearchChange(event)">
+            <button>
+              <i class="fa fa-search" onchange="onSearchChange(event)"></i>
+            </button>
         </div>
       </div>
     </header>
   </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="movie-list">
+          <div class="movie">
+            <div class="movie-card">
+              <div class="movie-card__container">
+                <figure class="movie__img--wrapper">
+                  <img class="movie__img" src="" alt="">
+                </figure>
+                <h2></h2>
+                <h3></h3>
+                <a href="https://imdb.com/title/.website"  target="_blank"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
+
+<script src="index.js"></script>
 </html>
