@@ -2,6 +2,7 @@
 const movieListEl = document.querySelector('.movie-list');
 let searchResultEl = document.querySelector('.movie-title');
 let searchEl = document.querySelector('.result');
+let movies;
 
 async function renderMovies(movie) {
   const movies = await fetch(`https://www.omdbapi.com/?apikey=fe87177d&s=${movie}`);
@@ -20,6 +21,7 @@ async function renderMovies(movie) {
   }
   searchEl.innerHTML = result;
 
+  searchEl.innerHTML = result;
   movieListEl.innerHTML = moviesHTML
     .map((movie) => {
       return ` 
@@ -35,7 +37,6 @@ async function renderMovies(movie) {
     </div>`;
       }).join("");
   }
-
 
 
 function onSearchChange(event) {
