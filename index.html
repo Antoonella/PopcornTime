@@ -18,13 +18,13 @@
       </figure>
       <ul class="nav__link--list">
         <li class="nav__link">
-          <a href="#" class="nav__link--anchor">Home</a>
+          <a href="" class="nav__link--anchor">Home</a>
         </li>
         <li class="nav__link">
-          <a href="#" class="nav__link--anchor">Find your movie</a>
+          <a href="" class="nav__link--anchor">Find your movie</a>
         </li>
         <li class="nav__link">
-          <a href="#" class="nav__link--anchor primary__link">CONTACT</a>
+          <a href="" class="nav__link--anchor primary__link">CONTACT</a>
         </li>
       </ul>
     </nav>
@@ -39,6 +39,24 @@
         </div>
       </div>
     </header>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="movies__header">
+          <h2 class="section__title movies__header--title">
+            Search For: <span class="yellow result"></span>
+          </h2>
+          <select id="filter" onchange="filterMovies(event)">
+            <option value="" disabled selected>Sort</option>
+            <option value="NEW_TO_OLD">Newest to Oldest</option>
+            <option value="OLD_TO_NEW">Oldesr to Newest</option>
+            <option value="A_Z">A to Z</option>
+          </select>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section>

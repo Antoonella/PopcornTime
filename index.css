@@ -79,8 +79,8 @@ nav {
 }
 
 .primary__link:hover {
-  background-color: #1735e2;
-  border: 2px solid #1735e2;
+  background-color: rgb(214, 214, 7);;
+  border: 2px solid rgb(214, 214, 7);;
   color: white;
 }
 
@@ -146,13 +146,52 @@ button {
 }
 
 button:hover {
-  color: #1735e2;
+  color: rgb(214, 214, 7);;
 }
 
 .fa-search {
   background: transparent;
 }
 
+
+.movies__header {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 70px;
+}
+
+.section__title {
+  color: white;
+  font-size: 35px;
+}
+
+.movies__header--title {
+  margin-bottom: 0;
+}
+
+.yellow {
+  color: rgb(214, 214, 7);
+}
+
+#filter {
+  background-color: white;
+  padding: 10px;
+}
+
+select {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  height: 40px;
+  line-height: 40px;
+  outline: none;
+  padding: 0 16px;
+  width: 100%;
+  max-width: 200px;
+}
 
 /*
 
@@ -176,9 +215,14 @@ Movies
 }
 
 .movie {
-  border: 2px solid green;
   width: calc(100% / 3);
   box-shadow: inset -1px 1px 10px 3px rgb(245 245 245 / 60%);
+  opacity: 1;
+  display: none;
+}
+
+.movie:active {
+  opacity: 1;
 }
 
 .movie-card {
